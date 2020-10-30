@@ -1,0 +1,272 @@
+body {
+    background: #314755;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+}
+.container{
+    position: relative;
+}
+
+#logo {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 19%;
+}
+
+
+.botones{
+    margin-top: 1em;
+    text-align: center;
+}
+.frutas1{
+    width: 100%;
+    height: 100%;
+}
+.fruta1{
+    float: left;
+    margin-top: 2em;
+    /*border: 1px solid olivedrab;*/
+    margin-left: 5px;
+    margin-right: 4px;
+    width: 40%;
+    height: 30%;
+
+}
+p{
+    text-align: left;
+    color: whitesmoke;
+}
+#naranja{
+
+    height: 70%;
+    display: compact;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.fruta2{
+    float: left;
+    margin-top: 2em;
+    /*border: 1px solid olivedrab;*/
+    margin-left: 5px;
+    margin-right: 4px;
+    width: 40%;
+    height: 30%;
+
+}
+
+#melon{
+
+    height: 70%;
+    display: compact;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.fruta3{
+    float: left;
+    margin-top: 2em;
+    /*border: 1px solid olivedrab;*/
+    margin-left: 5px;
+    margin-right: 4px;
+    width: 40%;
+    height: 30%;
+
+}
+
+#sandia{
+
+    height: 70%;
+    display: compact;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.frutas2{
+    width: 100%;
+    height: 100%;
+}
+.fruta4{
+    float: left;
+    margin-top: 2em;
+    /*border: 1px solid olivedrab;*/
+    margin-left: 5px;
+    margin-right: 4px;
+    width: 40%;
+    height: 30%;
+
+}
+#pera{
+
+    height: 70%;
+    display: compact;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.fruta5{
+    float: left;
+    margin-top: 2em;
+    /*border: 1px solid olivedrab;*/
+    margin-left: 5px;
+    margin-right: 4px;
+    width: 40%;
+    height: 30%;
+
+}
+
+#fresas{
+
+    height: 70%;
+    display: compact;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.fruta6{
+    float: left;
+    margin-top: 2em;
+    /*border: 1px solid olivedrab;*/
+    margin-left: 5px;
+    margin-right: 4px;
+    width: 40%;
+    height: 30%;
+
+}
+
+#mango{
+
+    height: 70%;
+    display: compact;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.fruta7{
+    float: left;
+    margin-top: 2em;
+    /*border: 1px solid olivedrab;*/
+    margin-left: 5px;
+    margin-right: 4px;
+    width: 40%;
+    height: 30%;
+
+}
+
+#uvas{
+
+    height: 70%;
+    display: compact;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* vista Acerca de*/
+
+h3{
+    color: wheat;
+    text-align: center;
+}
+.mision{
+    float: left;
+    margin-top: 2em;
+    /*border: 1px solid olivedrab;*/
+    margin-left: 4px;
+    margin-right: 5px;
+    width: 45%;
+    height: 100%;
+}
+#mision{
+    text-align: left;
+
+}
+.vision{
+    float: right;
+    margin-top: 2em;
+    /*border: 1px solid olivedrab;*/
+    margin-left: 4px;
+    margin-right: 5px;
+    width: 45%;
+    height: 100%;
+
+}
+#vision{
+    text-align: left;
+}
+
+.dueño{
+    width: 100%;
+    height: 100%;
+    float: right;
+    margin-top: 5em;
+    /*border: 1px solid olivedrab;*/
+    margin-left: 4px;
+    margin-right: 5px;
+    width: 100%;
+    height: 100%;
+}
+#dueños{
+    text-align:center;
+    color: whitesmoke;
+}
+
+/*Vista Servicios*/
+
+.servicio{
+    float: contour;
+    margin-top: 2em;
+    /*border: 1px solid olivedrab;*/
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    height: 100%;
+}
+#servicio{
+    color: whitesmoke;
+}
+h4{
+    color: navajowhite;
+    text-align: center;
+}
+.empty{
+    float: contour;
+    margin-top: 2em;
+    /*border: 1px solid olivedrab;*/
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+/*Vista contacto*/
+.informacion{
+    float: contour;
+    margin-top: 2em;
+    /*border: 1px solid olivedrab;*/
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    height: 25%;
+}
+#informacion{
+ text-align: center;
+}
+.mapa{
+    float: contour;
+    margin-top: 1em;
+    /*border: 1px solid olivedrab;*/
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    height: 70%;
+    text-align: center;
+}
