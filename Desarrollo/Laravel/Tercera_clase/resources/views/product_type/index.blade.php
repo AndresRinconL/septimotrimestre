@@ -24,41 +24,36 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
     <div class="row">
         <div class="col-md-12">
 
-            <a href="{{ route('company.create') }}" class="btn btn-primary mt-5 mb-3">Crear nueva empresa</a>
+                <a href="{{ route('product_type.create') }}" class="btn btn-primary mt-5 mb-3">Crear nueva categoria</a>
 
-            <div class="table-responsive">
+            <div class="table-responsive mt-5 mb-3">
                 <table class="table table-striped table-sm ">
                     <thead class="table-dark">
                     <tr>
                         <th>NOMBRE</th>
-                        <th>NIT</th>
-                        <th>DIRECCIÓN</th>
                         <th>FECHA CREACIÓN</th>
                         <th>OPCIONES</th>
                     </tr>
                     </thead>
                     <tbody class="bg-white">
-                    @foreach($companies as $company)
-                    <tr>
-                        <td>{{ $company->name }}</td>
-                        <td>{{ $company->NIT }}</td>
-                        <td>{{ $company->address }}</td>
-                        <td>{{ $company->created_at }}</td>
-                        <td>
-                            <form action="{{ route('company.destroy',$company->id) }}" method="post">
-                                @csrf
-                                @method('DELETE')
-                                <a href="{{ route('company.show',$company->id) }}" class="btn btn-sm btn-info">Detalles</a>
-                                <a href="{{ route('company.edit',$company->id) }}" class="btn btn-sm btn-warning">Editar</a>
-                                <button type="submit" class="btn btn-sm btn-danger">Eliminar</button>
-                            </form>
-                        </td>
-                    </tr>
+                    @foreach($product_types as $product_type)
+                        <tr>
+                            <td>{{ $product_type->name }}</td>
+                            <td>{{ $product_type->created_at }}</td>
+                            <td>
+                                <form action="{{ route('product_type.destroy',$product_type->id) }}" method="post">
+                                    @csrf
+                                    @method('DELETE')
+                                    <a href="{{ route('product_type.edit',$product_type->id) }}" class="btn btn-sm btn-warning">Editar</a>
+                                    <a href="{{ route('product_type.show',$product_type->id) }}" class="btn btn-sm btn-info">Detalles</a>
+                                    <button type="submit" class="btn btn-sm btn-danger">Eliminar</button>
+                                </form>
+                            </td>
+                        </tr>
                     @endforeach
                     </tbody>
                 </table>
-                <a href="{{ route('product.index') }}" class="btn btn-primary mt-5 mb-3">Productos</a>
-                <a href="{{ route('product_type.index') }}" class="btn btn-primary mt-5 mb-3">Categorias</a>
+                <a href="{{ route('company.index') }}" class="btn btn-primary mt-5 mb-3">Volver</a>
             </div>
         </div>
     </div>

@@ -23,8 +23,6 @@ class CompanyController extends Controller
     }
 
     public function destroy($id){
-        // SELECT * FROM entidad WHERE ID = ?
-        // TRUE = DELETE FROM ENTIDAD WHERE ID = ?
         Company::find($id)->delete();
         return redirect()->route('company.index');
     }
@@ -40,5 +38,9 @@ class CompanyController extends Controller
 
         return redirect('company')->with('edit', 'Empresa Actualizada');
 
+    }
+    public function show($id){
+        $company=Company::find($id);
+        return view('company.show',compact('company'));
     }
 }

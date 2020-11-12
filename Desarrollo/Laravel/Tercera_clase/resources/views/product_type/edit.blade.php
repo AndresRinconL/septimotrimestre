@@ -15,26 +15,18 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-8 card card-body shadow p-3 mb-5 bg-white rounded mx-auto">
-            <form action="{{ route('company.update',$company->id) }}" method="post">
+            <form action="{{ route('product_type.update',$product_type->id) }}" method="post">
 
                 @csrf
                 {{method_field('PATCH')}}
 
-                <h3 class="mb-5">Editar Producto</h3>
+                <h3 class="mb-5">Editar Categoria</h3>
                 <div class="form-group">
-                    <label for="name">Nombre de la empresa</label>
-                    <input type="text" id="name" class="form-control" name="name" value="{{$company->name}}">
-                </div>
-                <div class="form-group">
-                    <label for="NIT">NIT de la empresa</label>
-                    <input type="text" id="NIT" class="form-control" name="NIT" value="{{$company->NIT}}">
-                </div>
-                <div class="form-group">
-                    <label for="address">Dirección de la empresa</label>
-                    <input type="text" id="address" class="form-control" name="address" value="{{$company->address}}">
+                    <label for="name">Nombre de la categoria</label>
+                    <input type="text" id="name" class="form-control" name="name" value="{{$product_type->name}}">
                 </div>
 
-                <input class="btn btn-success my-3" type="submit" value="Actualizar Empresa">
+                <input class="btn btn-success my-3" type="submit" value="Actualizar Categoria">
 
             </form>
 

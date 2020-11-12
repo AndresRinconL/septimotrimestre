@@ -5,14 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Company extends Model
+
+class ProductsTypes extends Model
 {
     use HasFactory;
+    protected $table='product_types';
     protected $primaryKey='id';
-    protected $table='companies';
-    protected  $fillable=
+    protected   $fillable=
         [
-            'name','NIT','address'
+            'name'
         ];
     public function products(){
         return $this->hasMany(Product::class);
