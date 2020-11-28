@@ -17,7 +17,7 @@
                     </div>
 
 
-                    <input class="btn btn-success my-3" type="submit" value="Actualizar Empresa">
+                    <input class="btn btn-success my-3" type="submit" value="Actualizar Localidad">
 
                 </form>
 

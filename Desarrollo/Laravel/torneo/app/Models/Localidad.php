@@ -14,4 +14,8 @@ class Localidad extends Model
     protected $fillable=[
         'localidad'
     ];
+
+    public function equipos(){
+        return $this->hasMany(Equipo::class);
+    }
 }

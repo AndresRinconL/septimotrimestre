@@ -15,5 +15,7 @@ class Jugador extends Model
         'nombre', 'apellido', 'numero_camisa', 'apodo', 'equipos_id'
     ];
 
-    // Join HasMany
+    public function equipos(){
+        return $this->belongsTo(Equipo::class);
+    }
 }

@@ -15,5 +15,10 @@ class Equipo extends Model
         'nombre_equipo', 'logo', 'localidades_id'
     ];
 
-    // JOIN HasMany
+    public function localidades(){
+        return $this->belongsTo(Localidad::class);
+    }
+    public function jugadores(){
+        return $this->hasMany(Jugador::class);
+    }
 }

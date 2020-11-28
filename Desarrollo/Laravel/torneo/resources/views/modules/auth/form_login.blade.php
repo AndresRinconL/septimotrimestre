@@ -12,8 +12,8 @@
                             <div class="row">
                                 <div class="col-7">
                                     <div class="text-primary p-4">
-                                        <h5 class="text-primary">Welcome Back !</h5>
-                                        <p>Sign in to continue to Skote.</p>
+                                        <h5 class="text-primary">Welcome Back!</h5>
+                                        <p>Sign in.</p>
                                     </div>
                                 </div>
                                 <div class="col-5 align-self-end">
@@ -23,7 +23,7 @@
                         </div>
                         <div class="card-body pt-0">
                             <div>
-                                <a href="index.html">
+                                <a href="">
                                     <div class="avatar-md profile-user-wid mb-4">
                                             <span class="avatar-title rounded-circle bg-light">
                                                 <img src="assets/images/logo.svg" alt="" class="rounded-circle" height="34">
@@ -53,7 +53,7 @@
 
 
                                     <div class="mt-4 text-center">
-                                        <a href="auth-recoverpw.html" class="text-muted"><i class="mdi mdi-lock mr-1"></i> Forgot your password?</a>
+                                        <a href="" class="text-muted"><i class="mdi mdi-lock mr-1"></i> Forgot your password?</a>
                                     </div>
                                 </form>
                             </div>
