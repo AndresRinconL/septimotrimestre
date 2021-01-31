@@ -19,7 +19,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/fruteria" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/torneo" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -139,18 +139,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Final/resources/views/vehiculo" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\polarsama\Documents\Laravel\Final\resources\views\vehiculo" />
+      <recent name="C:\Users\polarsama\Documents\Laravel\login\resources\skote" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\polarsama\Documents\Laravel\Final\resources\views" />
+      <recent name="C:\Users\polarsama\Documents\Laravel\Final\resources" />
       <recent name="C:\Users\polarsama\Documents\Laravel\tercera_clase\resources\views" />
       <recent name="C:\Users\polarsama\Documents\Laravel\fruteria\public\css" />
       <recent name="C:\Users\polarsama\Documents\Laravel\fruteria\resources\css" />
-      <recent name="C:\Users\polarsama\Documents\Laravel\Primer-proyecto\resources\views\Layouts" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -188,37 +194,50 @@
       <workItem from="1604937578867" duration="1398000" />
       <workItem from="1605185597624" duration="23000" />
       <workItem from="1605382028797" duration="1205000" />
+      <workItem from="1605985228175" duration="941000" />
+      <workItem from="1606010746770" duration="5509000" />
+      <workItem from="1606017713200" duration="832000" />
+      <workItem from="1606061682664" duration="257000" />
+      <workItem from="1606066562494" duration="1283000" />
+      <workItem from="1606069710150" duration="3571000" />
+      <workItem from="1606078102474" duration="5482000" />
+      <workItem from="1606148424600" duration="1264000" />
+      <workItem from="1606223224894" duration="4896000" />
+      <workItem from="1606268431078" duration="1337000" />
+      <workItem from="1606310924668" duration="3585000" />
+      <workItem from="1606350695442" duration="5380000" />
+      <workItem from="1606438954486" duration="87000" />
+      <workItem from="1606439211009" duration="6346000" />
+      <workItem from="1606482584919" duration="2323000" />
+      <workItem from="1606526205324" duration="922000" />
+      <workItem from="1606574599662" duration="5471000" />
+      <workItem from="1606593269281" duration="73000" />
+      <workItem from="1606593656887" duration="1858000" />
+      <workItem from="1606922830204" duration="13000" />
+      <workItem from="1607195923524" duration="976000" />
+      <workItem from="1607199687694" duration="2493000" />
+      <workItem from="1607265265644" duration="4029000" />
+      <workItem from="1607282223917" duration="261000" />
+      <workItem from="1607282734565" duration="6399000" />
+      <workItem from="1607304012332" duration="99000" />
+      <workItem from="1607445243846" duration="441000" />
+      <workItem from="1607446593042" duration="12362000" />
+      <workItem from="1607461997317" duration="12996000" />
+      <workItem from="1607540744574" duration="7163000" />
+      <workItem from="1607561393381" duration="4592000" />
+      <workItem from="1607606299244" duration="8484000" />
+      <workItem from="1607646892037" duration="4760000" />
+      <workItem from="1607692771956" duration="8161000" />
+      <workItem from="1607737818719" duration="40055000" />
+      <workItem from="1610115401531" duration="373000" />
+      <workItem from="1610116054984" duration="582000" />
+      <workItem from="1612104605467" duration="345000" />
+      <workItem from="1612106147044" duration="570000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="428" y="187" key="#Notifications" timestamp="1604347560155">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="428" y="187" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1604347560155" />
-    <state x="428" y="66" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604784078385">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="428" y="66" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1604784078385" />
-    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604242661975">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604242661975" />
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604853911285">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604853911285" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1604349728718">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1604349728718" />
-    <state x="184" y="8" key="SettingsEditor" timestamp="1603653126695">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603653126695" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
