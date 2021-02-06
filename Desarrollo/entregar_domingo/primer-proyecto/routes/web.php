@@ -16,7 +16,7 @@ use App\Http\Controllers\landingcontroller;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 //rutas Principales
