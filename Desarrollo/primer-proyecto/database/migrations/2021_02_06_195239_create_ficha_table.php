@@ -4,7 +4,6 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-
 class CreateFichaTable extends Migration
 {
     /**
@@ -19,16 +18,16 @@ class CreateFichaTable extends Migration
             $table->string('numFicha', 10);
             $table->string('description',200);
             $table->string('estatus',3);
-          //  $table->string('estudianteDoc', 20);
+            //  $table->string('estudianteDoc', 20);
             //Foraneas
             $table->bigInteger('fkInstructor')->unsigned();
-           // $table->bigInteger('fkJornada')->unsigned();
+            // $table->bigInteger('fkJornada')->unsigned();
             $table->bigInteger('fkEstudiante')->unsigned();
             $table->bigInteger('fkPrograma')->unsigned();
             //calls
-           // $table->foreign('fkJornada')->references('idJornada')->on('jornada')
-             //   ->onDelete('cascade')
-               // ->onUpdate('cascade');
+            // $table->foreign('fkJornada')->references('idJornada')->on('jornada')
+            //   ->onDelete('cascade')
+            // ->onUpdate('cascade');
 
             $table->foreign('fkPrograma')->references('idPrograma')->on('programaformacion');
 

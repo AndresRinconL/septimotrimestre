@@ -14,7 +14,7 @@ class Programaformacion extends Model
     protected $table='Programa_form';
     protected $primaryKey='idPrograma';
     protected $fillable=
-        ['codigo' , 'nombre' , 'siglas'];
+        ['codigo' , 'nombre' , 'siglas','fkJornada'];
     public function jornadaForm(){
         return $this->belongsTo(Jornada::class,'fkJornada');
     }

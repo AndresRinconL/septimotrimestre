@@ -21,11 +21,8 @@ class CreateProgramaformacionTable extends Migration
             //foraneas
             $table->bigInteger('fkJornada')->unsigned();
             //calls
-            $table->foreign('fkJornada')->references('idPrograma')->on('jornada')
-                ->onUpdate('cascade')
-                ->onDelete('cascade');
+            $table->foreign('fkJornada')->references('idJornada')->on('jornada');
 
-            $table->timestamps();
         });
     }
 
