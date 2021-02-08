@@ -11,42 +11,42 @@
 <div class="container">
     <div class="row">
         <div class="col-nd-4 mt-5">
-            <form action="{{route('user.update',$user->id)}}" method="post">
+            <form action="{{route('Estudiante.update',$estudiante->id)}}" method="post">
                 @csrf
                 @method('put')
                 <table class="table">
                     <tbody>
                     <tr>
-                        <th>tipo usuario</th>
-                        <td> <input type="text" name="tipousuario" class="form-control" value="{{$user->tipousuario}}">}</td>
+                        <th>DOCUMENTO</th>
+                        <td> <input type="text" name="documento" class="form-control" value="{{$estudiante->documento}}">}</td>
                     </tr>
                     <tr>
-                        <th>numero cedula</th>
-                        <td> <input type="text" name="numerocedula" class="form-control" value="{{$user->numerocedula}}">}</td>
+                        <th>TIPO DE DOCUMENTO</th>
+                        <td> <input type="text" name="tipo_doc" class="form-control" value="{{$estudiante->tipo_doc}}">}</td>
                     </tr>
                     <tr>
-                        <th>nombres</th>
-                        <td> <input type="text" name="nombres" class="form-control" value="{{$user->nombres}}">}</td>
+                        <th>NOMBRES</th>
+                        <td> <input type="text" name="nombres" class="form-control" value="{{$estudiante->nombres}}">}</td>
                     </tr>
                     <tr>
-                        <th>apellidos</th>
-                        <td> <input type="text" name="apellidos" class="form-control" value="{{$user->apellidos}}">}</td>
+                        <th>APELLIDOS</th>
+                        <td> <input type="text" name="apellidos" class="form-control" value="{{$estudiante->apellidos}}">}</td>
                     </tr>
                     <tr>
-                        <th>direccion</th>
-                        <td> <input type="text" name="direccion" class="form-control" value="{{$user->direccion}}">}</td>
+                        <th>CORREO</th>
+                        <td> <input type="text" name="correo" class="form-control" value="{{$estudiante->correo}}">}</td>
                     </tr>
                     <tr>
-                        <th>telefono</th>
-                        <td> <input type="text" name="telefono" class="form-control" value="{{$user->telefono}}">}</td>
+                        <th>FECHA DE NACIMIENTO</th>
+                        <td> <input type="text" name="fechaNacimiento" class="form-control" value="{{$estudiante->fechaNacimiento}}">}</td>
                     </tr>
                     <tr>
-                        <th>ciudad</th>
-                        <td> <input type="text" name="ciudad" class="form-control" value="{{$user->ciudad}}">}</td>
+                        <th>GENERO</th>
+                        <td> <input type="text" name="genero" class="form-control" value="{{$estudiante->genero}}">}</td>
                     </tr>
                     </tbody>
                 </table>
-                <a href="{{route('user.index')}}" class="btn btn-default">CANCELAR</a>
+                <a href="{{route('Estiduante.index')}}" class="btn btn-default">CANCELAR</a>
                 <button type="submit" class="btn btn-primary">GUARDAR CAMBIOS</button>
             </form>
         </div>

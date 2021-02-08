@@ -4,18 +4,21 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 
 class Programaformacion extends Model
 {
-    use SoftDeletes;
+
     use HasFactory;
-    protected $table='Programa_form';
+    protected $table='programaformacion';
     protected $primaryKey='idPrograma';
     protected $fillable=
         ['codigo' , 'nombre' , 'siglas','fkJornada'];
-    public function jornadaForm(){
+
+    public function jornada(){
         return $this->belongsTo(Jornada::class,'fkJornada');
+    }
+    public function ficha(){
+        return $this->hasMany(Ficha::class);
     }
 }

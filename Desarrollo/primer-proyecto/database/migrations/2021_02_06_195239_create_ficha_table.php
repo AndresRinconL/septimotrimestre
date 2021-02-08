@@ -36,7 +36,7 @@ class CreateFichaTable extends Migration
 
 
             $table->foreign('fkEstudiante')->references('idEstudiante')->on('estudiante');
-
+            $table->softDeletes();
             $table->timestamps();
         });
     }

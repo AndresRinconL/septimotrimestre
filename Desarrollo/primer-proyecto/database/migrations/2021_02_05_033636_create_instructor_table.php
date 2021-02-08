@@ -21,7 +21,7 @@ class CreateInstructorTable extends Migration
             $table->string('apellidos', 50);
             //$table->blob('foto');
             $table->string('especialidad', 50);
-
+            $table->softDeletes();
             $table->timestamps();
         });
     }

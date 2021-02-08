@@ -11,38 +11,46 @@
 <div class="container">
     <div class="row">
         <div class="col-nd-4 mt-5">
-            <form action="{{route('vehiculo.store')}}" method="post">
+            <form action="{{route('Ficha.store')}}" method="post">
                 @csrf
                 <div class="form-group">
-                    <label for="placa">placa</label>
-                    <input type="text" name="placa" id="placa" class="form-control">
+                    <label for="numFicha">NÚMERO DE FICHA</label>
+                    <input type="text" name="numFicha" id="numFicha" class="form-control">
 
                 </div>
+                <div class="form-group">
+                    <label for="description">DESCRIPCIÓN</label>
+                    <input type="text" name="description" id="description" class="form-control">
+
+                </div>
+                <div class="form-group">
+                    <label for="estatus">ESTADO</label>
+                    <input type="text" name="estatus" id="estatus" class="form-control">
+
+                </div>
+                <div class="form-group">
+                    <label for="instructor">INSTRUCTOR</label>
+                    <select name="instructor" id="instructor" class="form-control" required>
+                        <option value="">Seleccionar...</option>
+                        @foreach($instructores as $instructor)
+                            <option value="{{ $instructor->idPrograma }}">{{ $instructor->nombres}}</option>
+                        @endforeach
+                    </select>
+                </div>
 
                 <div class="form-group">
-                    <label for="color">color</label>
-                    <input type="text" name="color" id="color" class="form-control">
+                    <label for="programas">PROGRAMA DE FORMACION</label>
+                    <select name="programaF" id="programaF" class="form-control" required>
+                        <option value="">Seleccionar...</option>
+                        @foreach($programas as $programa)
+                            <option value="{{ $programa->idPrograma }}">{{ $programa->nombre}}</option>
+                        @endforeach
+                    </select>
                 </div>
 
-                <div class="form-group">
-                    <label for="marca">marca</label>
-                    <input type="text" name="marca" id="marca" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="tipovehiculo">tipo vehiculo</label>
-                    <input type="text" name="tipovehiculo" id="tipovehiculo" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="conductor">conductor</label>
-                    <input type="text" name="conductor" id="conductor" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="propietario">propietario</label>
-                    <input type="text" name="propietario" id="propietario" class="form-control">
-                </div>
                 <hr>
-                <button class="btn  btn-primary" type="submit">GUARDAR VEHICULO</button>
-                <a href="{{ route('vehiculo.index') }}">CANCELAR</a>
+                <button class="btn  btn-primary" type="submit">GUARDAR FICHA</button>
+                <a href="{{ route('Ficha.index') }}">CANCELAR</a>
             </form>
         </div>
     </div>

@@ -1,39 +1,47 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-use app\Models\Instructor;
+use App\Models\Instructor;
 
 class InstructorController extends Controller
 {
-    //GET
     public function index(){
+
         $instructor=Instructor::all();
-        return view('Instructor.index',compact('instructors'));
+        return view('Instructor.index', compact('instructor'));
     }
-    //GET
     public function create(){
-        return view('instructor.create');
+        return view('Instructor.create');
     }
     public function store(Request $request){
         $instructor=Instructor::create($request->all());
-        return redirect()->route('instructor.index');
+        return redirect()->route('Instructor.index');
     }
-    public function show($id){
-        $instructor=Instructor::find($id);
-        return view('instructor.show',compact('instructor'));
+    public function show($idInstructor){
+        $instructor=Instructor::find($idInstructor);
+        return view('Instructor.show',compact('instructor'));
     }
-    public function edit($id){
-        $instructor=Instructor::find($id);
-        return view('instructor.edit',compact('instructor'));
+    public function edit($idInstructor){
+        $instructor=Instructor::find($idInstructor);
+        return view('Instructor.edit',compact('instructor'));
     }
-    public function update(Request $request, $id){
-        $instructor=Instructor::find($id)->update($request->all());
-        return redirect()->route('instructor.index');
+    public function update(Request $request, $idInstructor){
+        $instructor=Instructor::find($idInstructor)->update($request->all());
+        return redirect()->route('Instructor.index');
     }
-    public function destroy($id){
-        $instructor=Instructor::find($id)->delete();
-        return redirect()->route('instructor.index');
+    public function destroy(Request $request,$idInstructor){
+        Instructor::find($idInstructor)->delete();
+        //Instructor::find($idInstructor)->forcedelete();
+        $request->session()->flash('message','Instructor Desactivado');
+        return redirect()->route('Instructor.index');
+    }
+    public function restore(Request $request,$idInstructor){
+        Instructor::onlyTrashed()->find($idInstructor)->restore();
+        //$instrurtor= Instructor::withTrashed($idInstructor)->first();
+        //$instructor = Instructor::withTrashed()->where('idInstructor', '=', $idInstructor)->first();
+        //$instructor ->restore();
+        return 'Restablecido';
+
     }
 }

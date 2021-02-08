@@ -4,27 +4,22 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use Monolog\Handler\FingersCrossedHandler;
-
-
-$user = Instructor::find(1);
-
-foreach ($user->ficha as $ficha) {
-
-}
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Instructor extends Model
 {
-    use SoftDeletes;
+
     use HasFactory;
+    use SoftDeletes;
     protected $table='Instructor';
     protected $primaryKey='idInstructor';
+    protected $dates=['deleted_at'];
     protected $fillable=
-        ['nombres', 'apellidos', 'foto' , 'especialidad'];
+        ['nombres', 'apellidos' , 'especialidad'];
 
     public function ficha()
     {
-        return $this->belongsToMany(Ficha::class,'idFicha');
+        return $this->hasMany(Ficha::class);
     }
 }

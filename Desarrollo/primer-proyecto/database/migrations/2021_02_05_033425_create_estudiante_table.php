@@ -21,8 +21,9 @@ class CreateEstudianteTable extends Migration
             $table->string('nombres', 50);
             $table->string('apellidos', 50);
             $table->string('correo', 80);
-            $table->date('fechaNacimineto');
-            $table->boolean('genero');
+            $table->string('fechaNacimiento',25);
+            $table->string('genero',1);
+            $table->softDeletes();
             $table->timestamps();
 
         });

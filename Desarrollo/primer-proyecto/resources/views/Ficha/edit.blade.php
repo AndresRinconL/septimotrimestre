@@ -8,46 +8,59 @@
     <title>Document</title>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-nd-4 mt-5">
-            <form action="{{route('vehiculo.update',$vehiculos->id)}}" method="post">
-                @csrf
-                @method('put')
-                <table class="table">
-                    <tbody>
-                    <tr>
-                        <th>placa</th>
-                        <td> <input type="text" name="placa" class="form-control" value="{{$vehiculos->placa}}">}</td>
-                    </tr>
-                    <tr>
-                        <th>color</th>
-                        <td> <input type="text" name="color" class="form-control" value="{{$vehiculos->color}}">}</td>
-                    </tr>
-                    <tr>
-                        <th>Correo</th>
-                        <td> <input type="text" name="marca" class="form-control" value="{{$vehiculos->marca}}">}</td>
-                    </tr>
-                    <tr>
-                        <th>tipo vehiculo</th>
-                        <td> <input type="text" name="tipovehiculo" class="form-control" value="{{$vehiculos->tipovehiculo}}">}</td>
-                    </tr>
-                    <tr>
-                        <th>Conductor</th>
-                        <td> <input type="text" name="conductor" class="form-control" value="{{$vehiculos->conductor}}">}</td>
-                    </tr>
-                    <tr>
-                        <th>propietario</th>
-                        <td> <input type="text" name="propietario" class="form-control" value="{{$vehiculos->propietario}}">}</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <a href="{{route('vehiculo.index')}}" class="btn btn-default">CANCELAR</a>
-                <button type="submit" class="btn btn-primary">GUARDAR CAMBIOS</button>
-            </form>
+    <div class="content-wrapper">
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-8 card card-body shadow p-3 mb-5 bg-white rounded mx-auto">
+                    <form action="{{ route('Ficha.update',$ficha->idFicha) }}" method="post">
+
+                        @csrf
+                        {{method_field('PATCH')}}
+
+                        <h3 class="mb-5">Editar Ficha</h3>
+
+                        <div class="form-group mt-5">
+                            <label for="fkInstructor">INSTRUCTOR</label>
+                            <select name="fkInstructor" id="fkInstructor" class="form-control" required>
+                                <option value="">Seleccionar...</option>
+                                @foreach($instructores as $instructor)
+                                    <option value="{{ $instructor->idInstructor }}">{{ $instructor->nombres}}</option>
+                                @endforeach
+                            </select>
+                            <label for="fkPrograma">PROGRAMA DE FORMACION</label>
+                            <select name="fkPrograma" id="fkPrograma" class="form-control" required>
+                                <option value="">Seleccionar...</option>
+                                @foreach($programas as $programa)
+                                    <option value="{{ $programa->idPrograma }}">{{ $programa->nombre}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="numFicha">NÚMERO DE FICHA:</label>
+                            <input name="numFicha" id="numFicha" type="text" class="form-control" value="{{$ficha->numFicha}}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">DESCRIPCIÓN:</label>
+                            <input name="description" id="description" type="text" class="form-control" value="{{$ficha->description}}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="estatus">ESTADO:</label>
+                            <input name="estatus" id="estatus" type="text" class="form-control" value="{{$ficha->estatus}}">
+                        </div>
+
+
+                        <input class="btn btn-success my-3" type="submit" value="Actualizar Ficha">
+
+                    </form>
+
+                </div>
+            </div>
         </div>
+
     </div>
-</div>
 </body>
 </html>
 

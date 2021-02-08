@@ -9,12 +9,14 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class ficha extends Model
 {
-    use SoftDeletes;
+
     use HasFactory;
+    use SoftDeletes;
     protected $table='Ficha';
     protected $primaryKey='idFicha';
+    protected $dates = ['deleted_at'];
     protected $fillable=
-        ['numFicha', 'jornada', 'programaF'] ;
+        ['numFicha', 'description', 'estatus','fkInstructor','fkEstudiante ','fkPrograma'] ;
     public function estudiante()
     {
         return $this->hasMany(Estudiante::class,'fkEstudiante');
@@ -24,6 +26,6 @@ class ficha extends Model
         return $this->belongsTo(Programaformacion::class,'fkPrograma');
     }
     public function instructor(){
-        return $this->belongsToMany(Instructor::class,'idInstructor');
+        return $this->belongsTo(Instructor::class,'fkInstructor');
     }
 }

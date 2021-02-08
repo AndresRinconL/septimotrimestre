@@ -12,21 +12,21 @@ class landingcontroller extends Controller
 {
     public function inicio (){
 
-        return view('principal.inicio');
+        return view('principal.index');
 
     }
     public function Instructor()
     {
-        return view('instructor.index');
+        return view('Instructor.index');
     }
     public function Estudiante()
     {
-        return view('estudiante.index');
+        return view('Estudiante.index');
     }
     public function Ficha(){
-        return view('principal.ficha');
+        return view('Ficha.index');
     }
     public function Programa(){
-        return view('principal.programa');
+        return view('Programaformacion.index');
     }
 }

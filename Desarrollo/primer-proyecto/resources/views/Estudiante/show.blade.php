@@ -15,37 +15,37 @@
             <table class="table">
                 <tbody>
                 <tr>
-                    <th>tipo usuario</th>
-                    <td>{{$user->tipousuario}}</td>
+                    <th>DOCUMENTO</th>
+                    <td>{{$estudiante->documento}}</td>
                 </tr>
                 <tr>
-                    <th>numero cedula</th>
-                    <td>{{$user->numerocedula}}</td>
+                    <th>TIPO DE DOCUMENTO</th>
+                    <td>{{$estudiante->numerocedula}}</td>
                 </tr>
                 <tr>
-                    <th>nombres</th>
-                    <td>{{$user->nombres}}</td>
+                    <th>NOMBRES</th>
+                    <td>{{$estudiante->nombres}}</td>
                 </tr>
                 <tr>
-                    <th>apellidos</th>
-                    <td>{{$user->apellidos}}</td>
+                    <th>APELLIDOS</th>
+                    <td>{{$estudiante->apellidos}}</td>
                 </tr>
                 <tr>
-                    <th>direccion</th>
-                    <td>{{$user->direccion}}</td>
+                    <th>CORREO</th>
+                    <td>{{$estudiante->direccion}}</td>
                 </tr>
                 <tr>
-                    <th>telefono</th>
-                    <td>{{$user->telefono}}</td>
+                    <th>FECHA DE NACIMIENTO</th>
+                    <td>{{$estudiante->telefono}}</td>
                 </tr>
                 <tr>
-                    <th>ciudad</th>
-                    <td>{{$user->ciudad}}</td>
+                    <th>GENERO</th>
+                    <td>{{$estudiante->ciudad}}</td>
                 </tr>
                 </tbody>
             </table>
-            <a href="{{route('user.index')}}" class="btn btn-default">VOLVER</a>
-            <a href="{{route('user.edit', $user->id)}}" class="btn btn-warning">EDITAR</a>
+            <a href="{{route('Estudiante.index')}}" class="btn btn-default">VOLVER</a>
+            <a href="{{route('Estudiante.edit', $estudiante->idEstudiante)}}" class="btn btn-warning">EDITAR</a>
         </div>
     </div>
 </div>

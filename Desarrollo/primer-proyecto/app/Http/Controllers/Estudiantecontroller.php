@@ -18,21 +18,21 @@ class Estudiantecontroller extends Controller
         $estudiante=Estudiante::create($request->all());
         return redirect()->route('Estudiante.index');
     }
-    public function show($id){
-        $estudiante=Estudiante::find($id);
+    public function show($idEstudiante){
+        $estudiante=Estudiante::find($idEstudiante);
         return view('Estudiante.show',compact('estudiante'));
 
     }
-    public function destroy($id){
-        $estudiante=Estudiante::find($id)->delete();
+    public function destroy($idEstudiante){
+        Estudiante::find($idEstudiante)->delete();
         return redirect()-> route('Estudiante.index');
     }
-    public function edit($id){
-        $estudiante=Estudiante::find($id);
+    public function edit($idEstudiante){
+        $estudiante=Estudiante::find($idEstudiante);
         return view('Estudiante.edit',compact('estudiante'));
     }
-    public function update(Request $request,$id){
-        $estudiante=Estudiante::find($id)->update($request->all());
-        return redirect()->route('Estudiante.show',$id);
+    public function update(Request $request,$idEstudiante){
+        $estudiante=Estudiante::find($idEstudiante)->update($request->all());
+        return redirect()->route('Estudiante.show',$idEstudiante);
     }
 }

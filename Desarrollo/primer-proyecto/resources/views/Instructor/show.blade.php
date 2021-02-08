@@ -15,37 +15,22 @@
             <table class="table">
                 <tbody>
                 <tr>
-                    <th>tipo usuario</th>
-                    <td>{{$conductor->tipousuario}}</td>
+                    <th>NOMBRES</th>
+                    <td>{{$instructor->nombres}}</td>
                 </tr>
                 <tr>
-                    <th>numero cedula</th>
-                    <td>{{$conductor->numerocedula}}</td>
+                    <th>APELLIDOS</th>
+                    <td>{{$instructor->apellidos}}</td>
                 </tr>
+
                 <tr>
-                    <th>nombres</th>
-                    <td>{{$conductor->nombres}}</td>
-                </tr>
-                <tr>
-                    <th>apellidos</th>
-                    <td>{{$conductor->apellidos}}</td>
-                </tr>
-                <tr>
-                    <th>direccion</th>
-                    <td>{{$conductor->direccion}}</td>
-                </tr>
-                <tr>
-                    <th>telefono</th>
-                    <td>{{$conductor->telefono}}</td>
-                </tr>
-                <tr>
-                    <th>ciudad</th>
-                    <td>{{$conductor->ciudad}}</td>
+                    <th>ESPECIALIDAD</th>
+                    <td>{{$instructor->especialidad}}</td>
                 </tr>
                 </tbody>
             </table>
-            <a href="{{route('Conductor.index')}}" class="btn btn-default">VOLVER</a>
-            <a href="{{route('Conductor.edit', $conductor->id)}}" class="btn btn-warning">EDITAR</a>
+            <a href="{{route('Instructor.index')}}" class="btn btn-default">VOLVER</a>
+            <a href="{{route('Instructor.edit', $instructor->idInstructor)}}" class="btn btn-warning">EDITAR</a>
         </div>
     </div>
 </div>

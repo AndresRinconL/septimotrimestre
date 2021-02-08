@@ -11,44 +11,44 @@
 <div class="container">
     <div class="row">
         <div class="col-nd-4 mt-5">
-            <form action="{{route('user.store')}}" method="post">
+            <form action="{{route('Estudiante.store')}}" method="post">
                 @csrf
                 <div class="form-group">
-                    <label for="tipousuario">tipo usuario</label>
-                    <input type="text" name="tipousuario" id="tipousuario" class="form-control">
+                    <label for="documento">DOCUMENTO</label>
+                    <input type="text" name="documento" id="documento" class="form-control">
 
                 </div>
                 <div class="form-group">
-                    <label for="numerocedula">Numero Cedula</label>
-                    <input type="text" name="numerocedula" id="numerocedula" class="form-control">
+                    <label for="tipo_doc">TIPO DE DOCUMENTO</label>
+                    <input type="text" name="tipo_doc" id="tipo_doc" class="form-control">
 
                 </div>
 
                 <div class="form-group">
-                    <label for="nombres">nombres</label>
+                    <label for="nombres">NOMBRES</label>
                     <input type="text" name="nombres" id="nombres" class="form-control">
                 </div>
 
                 <div class="form-group">
-                    <label for="apellidos">apellidos</label>
+                    <label for="apellidos">APELLIDOS</label>
                     <input type="text" name="apellidos" id="apellidos" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="direccion">Direccion</label>
-                    <input type="text" name="direccion" id="direccion" class="form-control">
+                    <label for="correo">CORREO</label>
+                    <input type="text" name="correo" id="correo" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="telefono">telefono</label>
-                    <input type="text" name="telefono" id="telefono" class="form-control">
+                    <label for="fechaNacimiento">FECHA DE NACIMIENTO</label>
+                    <input type="text" name="fechaNacimiento" id="fechaNacimiento" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="ciudad">ciudad</label>
-                    <input type="text" name="ciudad" id="ciudad" class="form-control">
+                    <label for="genero">GENERO</label>
+                    <input type="text" name="genero" id="genero" class="form-control">
                 </div>
 
                 <hr>
-                <button class="btn  btn-primary" type="submit">GUARDAR USUARIO</button>
-                <a href="{{ route('user.index') }}">CANCELAR</a>
+                <button class="btn  btn-primary" type="submit">GUARDAR APRENDIZ</button>
+                <a href="{{ route('Estudiante.index') }}">CANCELAR</a>
             </form>
         </div>
     </div>

@@ -15,14 +15,17 @@ class CreateProgramaformacionTable extends Migration
     {
         Schema::create('programaformacion', function (Blueprint $table) {
             $table->id('idPrograma');
+            $table->string('codigo',25);
             $table->string('nombre',50);
             $table->string('siglas',10);
 
             //foraneas
             $table->bigInteger('fkJornada')->unsigned();
             //calls
-            $table->foreign('fkJornada')->references('idJornada')->on('jornada');
-
+            $table->foreign('fkJornada')->references('idJornada')->on('Jornada')
+            ->onDelete('cascade')
+            ->onUpdate('cascade');
+            $table->timestamps();
         });
     }
 
